@@ -1,0 +1,18 @@
+# The humans responsible & technology colophon
+# humanstxt.org
+
+# TEAM
+
+    Pascal Geronimi - Head of UX - @geronimi
+    Roland Studer - UX Consultant - @RolandStuder
+    Pierre Fritsch - Graphic Designer - @fritschpierre
+    Philipp Murkowsky- UX Consultant - @pmurkowsky
+
+# THANKS
+
+    Puzzle ITC
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3
+    jQuery, Modernizr

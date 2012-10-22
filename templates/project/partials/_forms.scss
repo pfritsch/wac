@@ -1,0 +1,48 @@
+// Base form styles
+// 
+// =================================================================================
+
+/* 	BASE FORM STYLES
+	----------------- */
+
+label {
+	font-weight: bold;
+}
+
+fieldset {
+	border: 1px solid $grayLight;
+	font-size: 12px;
+	line-height: 1.3em;
+	margin: 0 0 1.5em;
+	padding: 0 1.4em 1.4em 1.4em;
+}
+
+legend {
+	background: $whiteDark;
+	border: 1px solid $grayLight;
+	@include border-radius;
+	font-weight: bold;
+	display: block;
+	left: 0;
+	margin: 0;
+	padding: rhythm(.2) rhythm(.8);
+	position: relative;
+	@include text-shadow( 1px 1px 0 rgba($white, .7) );
+	top: 0;
+}
+
+fieldset {
+	padding-top: 1.4em; 
+}
+
+legend {
+	margin-top: 0;
+	margin-bottom: 0; 
+}
+
+textarea {
+	min-height: 40px;
+	overflow: auto;
+	resize: vertical;
+	width: 100%; 
+}

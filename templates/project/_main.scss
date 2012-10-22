@@ -1,0 +1,15 @@
+// Main styles
+// Our main development file
+// =================================================================================
+
+@import "main/header";
+@import "main/menus";
+@import "main/footer";
+
+/* -------------------------------------------------------------------------*/
+/* Layout */
+
+.container {
+  @include container;
+  @include susy-grid-background;
+}
