@@ -2,6 +2,15 @@
 // Conditional class for IE, put all styles inside the .oldie
 // =================================================================================
 
+// Hackz for ie6/7 //
+//  ----------------- */
+table button, 
+table input { 
+  *overflow: auto;
+}
+//  ----------------- */
+
+
 .ie7 {
 
 }

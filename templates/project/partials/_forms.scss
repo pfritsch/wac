@@ -2,47 +2,81 @@
 // 
 // =================================================================================
 
-/* 	BASE FORM STYLES
-	----------------- */
-
+/*  BASE FORM STYLES
+  ----------------- */
 label {
-	font-weight: bold;
+  font-weight: bold;
 }
 
 fieldset {
-	border: 1px solid $grayLight;
-	font-size: 12px;
-	line-height: 1.3em;
-	margin: 0 0 1.5em;
-	padding: 0 1.4em 1.4em 1.4em;
+  border: 1px solid $borderColor;
+  line-height: 1.3em;
+  margin: rhythm() 0;
+  padding: 0 1.4em 1.4em 1.4em;
+}
+
+.control-group {
+  margin: rhythm() 0;
 }
 
 legend {
-	background: $whiteDark;
-	border: 1px solid $grayLight;
-	@include border-radius;
-	font-weight: bold;
-	display: block;
-	left: 0;
-	margin: 0;
-	padding: rhythm(.2) rhythm(.8);
-	position: relative;
-	@include text-shadow( 1px 1px 0 rgba($white, .7) );
-	top: 0;
+  display: block;
+  position: relative;
+  top: 0; 
+  left: 0;  
+  margin: 0 0 rhythm();
+  padding: rhythm(.2) rhythm(.8);
+
+  background: $whiteDark;
+  border: 1px solid $borderColor;
+  @include border-radius;
 }
 
-fieldset {
-	padding-top: 1.4em; 
-}
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+.uneditable-input {
+  @include inline-block;
+  padding: rhythm(.3);
 
-legend {
-	margin-top: 0;
-	margin-bottom: 0; 
+  font-size: 0.875em;
+  color: $blackLighter;
+
+  border: 1px solid $gray;
+  @include border-radius(3px);
+
+  &:focus {
+    border-color: rgba($linkColor, 0.8);
+    outline: 0;
+    outline: thin dotted \9; /* IE6-9 */
+    @include single-box-shadow($linkColor);
+  }
 }
 
 textarea {
-	min-height: 40px;
-	overflow: auto;
-	resize: vertical;
-	width: 100%; 
+  @include box-sizing(border-box);
+  min-height: 40px;
+  overflow: auto;
+  resize: vertical;
+  width: 100%; 
+  height: auto;
+}
+
+
+/*  BUTTONS STYLES
+  ----------------- */
+.btn {
+  @include button( #fff, $linkColor );
 }

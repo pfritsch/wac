@@ -143,3 +143,10 @@ hr {
 		border-color: $white;
 	}
 }
+
+/* 	Reset list-style
+	----------------- */
+.no-list {
+	@include reset-list-style;
+	padding: 0;
+}

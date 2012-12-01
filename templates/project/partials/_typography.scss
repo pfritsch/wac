@@ -35,39 +35,39 @@ a {
 }
 
 h1 {
-	font-size: 36px;
+	font-size: 2.25em; //36px;
 	line-height: 1.3em;
 }
 
 h2 {
-	font-size: 24px;
+	font-size: 1.500em; //24px;
 	line-height: 1.3em;
 }
 
 h3 {
-	font-size: 18px;
+	font-size: 1.125em; //18px;
 	line-height: 1.5em;
 }
 
 h4 {
-	font-size: 16px;
+	font-size: 1em; //16px;
 	line-height: 1.5em;
 }
 
 h5 {
-	font-size: 14px;
+	font-size: 0.875em; //14px;
 	line-height: 1.5em;
 }
 
 h6 {
-	font-size: 14px;
+	font-size: 0.875em; //14px;
 	line-height: 1.5em;
 }
 
 /* 	TEXT ELEMENT
 	----------------- */
 p {
-	margin: 0 0 rhythm() // output 1.5em;
+	margin: 0 0 rhythm(); // output 1.5em;
 }
 
 em {
@@ -80,7 +80,7 @@ strong {
 }
 
 small { 
-	font-size: 85%; 
+	font-size: 0.875em; 
 }
 
 cite {
@@ -94,7 +94,7 @@ dfn {
 
 sub, 
 sup {
-	font-size: 75%;
+	font-size: 0.75em;
 	line-height: 0;
 	position: relative;
 }
@@ -111,9 +111,9 @@ sub {
 
 abbr,
 acronym {
-	font-size: 90%;
+	font-size: 0.9em;
 	text-transform: uppercase;
-	border-bottom: 1px dotted $grayLight;
+	border-bottom: 1px dotted $borderColor;
 	cursor: help;
 }
 
@@ -125,8 +125,8 @@ del {
 
 pre {
 	background: #ffff99;
-	border-bottom: 1px solid #ff2;
-	border-top: 1px solid #ff2;
+	border-bottom: 1px solid $borderColor;
+	border-top: 1px solid $borderColor;
 	color: #990;
 	margin: 1.5em 0;
 	padding: rhythm(.5) rhythm(.3);
@@ -136,7 +136,7 @@ pre {
 code {
 	background: #ffff99;
 	color: #990;
-	font-size: 11px;
+	font-size: 0.688em; // 11px;
 	line-height: 1.2em;
 	padding: rhythm(.2);
 }
@@ -166,8 +166,8 @@ blockquote {
 	color: $grayDark;
 	font-style: italic;
 	font-family: $georgia;
-	margin: 1em 40px; 
-	padding-left: rhythm(.9);
+	margin: rhythm() 0; 
+	padding-left: rhythm(.8);
 	
 	em,
 	i,

@@ -89,8 +89,8 @@
 
 $default-border   : true !default;
 $default-text-shadow: light !default;
-$default-fsize    : 16px !default;
-$default-pad    : 14px 24px !default;
+$default-fsize    : 0.875em !default;
+$default-pad    : rhythm(.4) rhythm(.8) !default;
 $default-radius   : 3px !default;
 $default-display  : "inline-block" !default;
 $default-margin   : 0 !default;
@@ -172,7 +172,7 @@ $default-margin   : 0 !default;
   cursor: pointer;
   
   @if $display == "inline-block" {
-    @include inline-block-ie7;
+    @include inline-block;
   } @if $display == "inline" {
     display: inline;
   } @if $display == "block" {
