@@ -2,20 +2,20 @@
 
 /*
 Theme Name  :  Project Name - Print style
-Theme URL   :  
+Theme URL   :
 Version     :  0.1
 Author      :  Fritsch Pierre
 Author URL  :  http://www.wearecube.ch
-Mixed with  :  HTML5 Boilerplate & inseo 
-*  @see  https://github.com/h5bp/html5-boilerplate
-*  @see  https://github.com/inseo
+Mixed with  :  HTML5 Boilerplate & inseo
+*  @see  http://github.com/h5bp/html5-boilerplate
+*  @see  http://github.com/inseo
 */
 
 
 /*  GENERIC
   ----------------- */
 
-// Init Colors, remove shadows and backgrounds 
+// Init Colors, remove shadows and backgrounds
 // @see  http://www.sanbeiji.com/archives/953
 * {
   color: #000 !important;
@@ -50,7 +50,7 @@ img {
   page-break-inside: avoid;
 }
 
-// Minimum lines before next page 
+// Minimum lines before next page
 // @note  Doesn't work on Firefox
 p {
   orphans: 3;   // bas de page
@@ -90,8 +90,8 @@ img {
   ----------------- */
 
 //Remove some elements
-/** 
-header, nav, footer, 
+/**
+header, nav, footer,
 .nav, .breadcrumb, .btn-toolbar {
   display: none;
 }
@@ -128,7 +128,7 @@ header, nav, footer,
 
 // Remplacer une image par sa description détaillée
 /**
-.classe-a-remplacer img, 
+.classe-a-remplacer img,
 #identifiant-a-remplacer img {
   display: none;
 }

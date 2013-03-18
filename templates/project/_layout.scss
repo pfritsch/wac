@@ -1,0 +1,22 @@
+// Header
+// =================================================================================
+@import "layout/header";
+
+// Footer
+// =================================================================================
+@import "layout/footer";
+
+// Main
+// =================================================================================
+.container {
+  @include container;
+  @include susy-grid-background;
+}
+
+#content {
+  @include span-columns(8,12);
+}
+
+aside {
+  @include span-columns(3 omega,12);
+}

@@ -5,8 +5,6 @@ Index des maquettes
 3. [page 3](#)
 
 
-
-
 Évaluation individuelle des pages
 =================================
 
@@ -58,7 +56,7 @@ Contenu
 | Il n’y a pas plusieurs variantes d’un même mot (mail ou e-mail ou courriel).                                                                     |       |       |       |
 | Le ton employé est uniforme (tu ou vous).                                                                                                        |       |       |       |
 | Les formules passe-partout (en savoir plus, cliquez ici) sont remplacées par des intitulés utiles.                                               |       |       |       |
-| Les textes qui ne sont pas visibles par défaut (attributs `alt`, textes affichés via une fonction JavaScript, retranscriptions) sont pertinents. |       |       |       |   
+| Les textes qui ne sont pas visibles par défaut (attributs `alt`, textes affichés via une fonction JavaScript, retranscriptions) sont pertinents. |       |       |       |
 | Les éléments de listes sont conclus de manières identiques (virgule, point ou point-virgule).                                                    |       |       |       |
 | Les entités HTML sont utilisées à bon escient (`&hellip;` pour ..., `&laquo;` pour «, `&copy;` pour ©).                                          |       |       |       |
 | Le contenu ne comporte pas de tableaux imbriqués.                                                                                                |       |       |       |
@@ -132,15 +130,27 @@ CSS
 
 |                                                                                                                                                  | &nbsp; |
 |--------------------------------------------------------------------------------------------------------------------------------------------------|--------|
-| La taille des polices destinées à l’affichage écran est exprimée en taille variable.                                                             |        |                                                             
+| La taille des polices destinées à l’affichage écran est exprimée en taille variable.                                                             |        |
 | Le focus clavier n’est ni supprimé ni masqué.                                                                                                    |        |
-| Les styles ne sont pas utilisés pour générer du contenu important.                                                                               |        || Les liens sont visuellement différenciés du reste du contenu.                                                                                    |        || Le soulignement est réservé aux liens.                                                                                                           |        || Un style différent est appliqué aux liens visités et non visités.                                                                                |        |
-Accessibilité-------------
+| Les styles ne sont pas utilisés pour générer du contenu important.                                                                               |        |
+| Les liens sont visuellement différenciés du reste du contenu.                                                                                    |        |
+| Le soulignement est réservé aux liens.                                                                                                           |        |
+| Un style différent est appliqué aux liens visités et non visités.                                                                                |        |
+
+Accessibilité
+-------------
 
 |                                                                                                                                                  | &nbsp; |
 |--------------------------------------------------------------------------------------------------------------------------------------------------|--------|
-| Le site n’impose pas de redirection ou de rafraîchissement automatique côté client (`<meta http-equiv="refresh">`).                              |        || Le site n’emploie pas la technique des jeux de cadres (`<frameset>`, `<frame>`, `<noframe>`).                                                    |        |
-Performance-----------
+| Le site n’impose pas de redirection ou de rafraîchissement automatique côté client (`<meta http-equiv="refresh">`).                              |        |
+| Le site n’emploie pas la technique des jeux de cadres (`<frameset>`, `<frame>`, `<noframe>`).                                                    |        |
+
+Performance
+-----------
+
 |                                                                                                                                                  | &nbsp; |
 |--------------------------------------------------------------------------------------------------------------------------------------------------|--------|
-| Les images sont optimisées (le format est adapté et le poids contrôlé).                                                                          |        || La feuille de styles est optimisée (utilisation de l’héritage, pas de surcharge inutile des sélecteurs)                                          |        || Les fonctions de scripts sont placées dans un ou plusieurs fichiers externes.                                                                    |        || Une fois le développement terminé, les sauts de ligne et les espaces inutiles sont supprimés dans l’ensemble des fichiers statiques (JavaScript/CSS/HTML).   |        |
+| Les images sont optimisées (le format est adapté et le poids contrôlé).                                                                          |        |
+| La feuille de styles est optimisée (utilisation de l’héritage, pas de surcharge inutile des sélecteurs)                                          |        |
+| Les fonctions de scripts sont placées dans un ou plusieurs fichiers externes.                                                                    |        |
+| Une fois le développement terminé, les sauts de ligne et les espaces inutiles sont supprimés dans l’ensemble des fichiers statiques (JavaScript/CSS/HTML).   |        |

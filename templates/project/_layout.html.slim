@@ -1,8 +1,10 @@
 doctype html
-/[if IE 7] html lang="en" class="no-js ie7 oldie"
-/[if IE 8] html lang="en" class="no-js ie8 oldie"
+/[if IE 7] 
+  | <html lang="en" class="no-js ie7 oldie">
+/[if IE 8] 
+  | <html lang="en" class="no-js ie8 oldie">
 /[if gt IE 8] <!
-html.no-js lang="en"
+html lang="en" class="no-js"
   /! <![endif]
   head
     meta charset="utf-8"
@@ -12,12 +14,20 @@ html.no-js lang="en"
     meta content="width=device-width" name="viewport"
     meta content="" name="description"
 
-    link href="" rel="shortcut icon"
+    / Icons
+    link href="images/favicon.ico" rel="shortcut icon"
+    link href="images/apple-touch-icon.png" rel="apple-touch-icon"
+    link href="images/apple-touch-icon-57x57.png" rel="apple-touch-icon" sizes="57x57"
+    link href="images/apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes="72x72"
+    link href="images/apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes="114x114"
 
-    /! Styles
-    link href="stylesheets/screen.css" rel="stylesheet"
+    / Styles
+    link href="stylesheets/screen.css" rel="stylesheet" media="screen"
+    link href="stylesheets/print.css" rel="stylesheet" media="print"
+    /[if IE] 
+      | <link href="stylesheets/ie.css" rel="stylesheet" media="screen">
 
-    /! Scripts
+    / Scripts
     script src="javascripts/vendor/modernizr-2.6.2.min.js"
 
   body role="document"
@@ -32,31 +42,31 @@ html.no-js lang="en"
     #page.hfeed.container
       header#header role="banner"
         form#search action="" method="" role="search"
-        /! #search
+        / end #search
         == render :partial => 'header'
-      /! end #masthead .site-header
+      / end #masthead
 
       nav#main-navigation role="navigation"
         == render :partial => 'navigation'
-      /! end #site-navigation .main-navigation
+      / end #site-navigation
 
       #main
         #content role="main"
           == yield
-        /! end #content .site-content
+        / end #content
 
         aside#sidebar role="complementary"
           == render :partial => 'sidebar'
-        /! end #sidebar .widget-area
+        / end #sidebar
 
-      /! end #main
+      / end #main
 
       footer#footer role="contentinfo"
-      /! end #colophon .site-footer
+      / end #colophon
 
-    /! end #page .hfeed
+    / end #page
 
-    /! Scripts
+    / Scripts
     script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"
     script window.jQuery || document.write('<script src="javascripts/vendor/jquery-1.8.2.min.js"><\/script>')
     script src="javascripts/plugins.js"

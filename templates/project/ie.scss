@@ -2,14 +2,17 @@
 // Conditional class for IE, put all styles inside the .oldie
 // =================================================================================
 
+@import "compass";
+@import "susy";
+@import "base/variable";
+
 // Hackz for ie6/7 //
 //  ----------------- */
-table button, 
-table input { 
+table button,
+table input {
   *overflow: auto;
 }
 //  ----------------- */
-
 
 .ie7 {
 
@@ -20,5 +23,5 @@ table input {
 }
 
 .oldie {
-	
+
 }

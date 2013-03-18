@@ -74,13 +74,13 @@ em {
 	font-style: italic;
 }
 
-b, 
+b,
 strong {
-	font-weight: bold; 
+	font-weight: bold;
 }
 
-small { 
-	font-size: 0.875em; 
+small {
+	font-size: 0.875em;
 }
 
 cite {
@@ -92,19 +92,19 @@ dfn {
 	font-weight: bold;
 }
 
-sub, 
+sub,
 sup {
 	font-size: 0.75em;
 	line-height: 0;
 	position: relative;
 }
 
-sup { 
+sup {
 	top: -0.5em;
 	vertical-align: sub;
 }
 
-sub { 
+sub {
 	bottom: -0.25em;
 	vertical-align: super;
 }
@@ -141,19 +141,19 @@ code {
 	padding: rhythm(.2);
 }
 
-pre, 
-code, 
-kbd, 
+pre,
+code,
+kbd,
 samp,
-tt { 
+tt {
 	font-family: $consolas;
 }
 
-ins { 
+ins {
 	text-decoration: underline;
 }
 
-mark { 
+mark {
 	background: #ff0;
 	color: #990;
 	font-size: 11px;
@@ -166,9 +166,9 @@ blockquote {
 	color: $grayDark;
 	font-style: italic;
 	font-family: $georgia;
-	margin: rhythm() 0; 
+	margin: rhythm() 0;
 	padding-left: rhythm(.8);
-	
+
 	em,
 	i,
 	cite {
@@ -189,7 +189,7 @@ blockquote {
 
 q:before,
 q:after,
-blockquote:before, 
+blockquote:before,
 blockquote:after {
   content: "";
 }
@@ -202,10 +202,14 @@ address {
 
 /* 	LISTS
 	----------------- */
-ul, 
+.no-list {
+	@include reset-list-style;
+	padding: 0;
+}
+ul,
 ol {
 	margin: 1em 0;
-	padding: 0 0 0 rhythm(1.5); 
+	padding: 0 0 0 rhythm(1.5);
 }
 
 ul {
@@ -228,7 +232,7 @@ ol ol ol ol {
 	list-style: lower-alpha;
 }
 
-li ul, 
+li ul,
 li ol {
 	margin: 0;
 }
